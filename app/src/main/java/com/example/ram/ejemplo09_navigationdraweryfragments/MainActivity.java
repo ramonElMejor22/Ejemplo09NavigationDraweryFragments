@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity
         //Paso 2.1 Obtener el objeto que gestiona los fragments de Android
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container,importFragment).commit();
+
+        Log.d("Cambio", "Cambio");
 
     }
 
